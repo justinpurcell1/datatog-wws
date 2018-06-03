@@ -1,0 +1,30 @@
+{
+  "name": "datatog-wws",
+  "version": "1.0.0",
+  "description": "A Magic the Gathering bot for IBM Watson Workspace",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jasmine",
+    "dev": "concurrently \"node ./node_modules/watsonworkspace-ngrok/index.js\" \"nodemon --inspect ./index.js\""
+  },
+  "keywords": [
+    "watsonworkspace",
+    "ibm",
+    "cognitive"
+  ],
+  "author": "justin.purcell1@ibm.com",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "nodemon": "^1.12.1",
+    "watsonworkspace-ngrok": "^1.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "mtgsdk": "^0.3.0",
+    "watsonworkspace-bot": "^2.0.0",
+    "watsonworkspace-sdk": "^2.0.0",
+    "winston": "^2.4.0"
+  }
+}
